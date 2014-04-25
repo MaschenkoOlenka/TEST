@@ -1,0 +1,311 @@
+* {margin: 0; padding: 0}
+html {height: 100%}
+html,body,div,span,applet,object,iframe,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { border: 0; margin: 0; padding: 0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block}
+a {outline: none; color: #007ca7; border-bottom: 1px solid #add3e0; text-decoration: none}
+a:hover {color: #bb0000; border-bottom: 1px solid #e6adad}
+html,textarea { overflow: auto}
+input {vertical-align: middle}
+input, textarea, select {outline:none; resize: none}
+table{ border-collapse: collapse; border-spacing: 0}
+img { vertical-align: top; border: none}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+body {
+	font-family: 'Open Sans',Arial,Verdana,Tahoma sans-serif;
+    font-size: 13px;
+    color: #666;
+    background: #f8f8f8 url("../images/bg.png");
+	height: 100%
+}
+h1, h2, h3 {color: #000}
+h1 {font-size: 30px}
+h2 {font-size: 24px}
+h3 {font-size: 18px}
+#content ol,#content ul {padding: 15px 0 15px 45px}
+#contentol li,#content ul li {padding-bottom: 20px}
+#sh {
+    position: absolute;
+    top: 0; left: 0;
+    min-width: 100%; height: 139px;
+    background: url("../images/sh.png") repeat-x;
+    z-index: 1
+}
+#wrapper {
+    position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    z-index: 2
+}
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    float: left;
+	width: 940px; height: 98px;
+    margin: 0 130px
+}
+#header #logo {float: left; margin-top: 28px; border: none}
+#header #header_menu {float: left; margin: 35px 0 0 130px}
+#header #header_menu a {
+    text-transform: uppercase;
+    font-weight: bold; font-size: 12px;
+    float: left; margin-right: 20px;
+    padding-top: 5px;
+    color: #333; border-bottom: 1px solid #cacaca
+}
+#header #header_menu a:hover {color: #bb0000; border-bottom: 1px solid #e6adad}
+#header #header_menu a.active {
+    position: relative;
+    background: #ff9900;
+    padding: 4px 15px;
+    border: none; color: #fff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: inset 0 2px 6px #f37400;
+    -moz-box-shadow: inset 0 2px 6px #f37400;
+    -webkit-box-shadow: inset 0 2px 6px #f37400
+}
+#header #header_menu a.active span {
+    display: block; position: absolute;
+    bottom: -11px; left: 0;
+    width: 100%; height: 9px;
+    background: url("../images/sh_a.png") center no-repeat
+}
+.sh_header {
+    float: left;
+    width: 1200px; height: 19px;
+    background: url("../images/sh_header.png") no-repeat
+}
+/*Main_page*/
+#header.main {height: 195px}
+#logo_main {
+    width: 160px;
+    display: block; float: none;
+    margin: 30px auto 0; border: none;
+}
+#header #header_menu.main {
+    float: none; margin: 30px auto;
+    width: 100%; text-align: center
+}
+#header #header_menu.main a {float: none; display: inline-block}
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+    float: left;
+    width: 940px;
+    margin: 0 130px;
+	padding: 40px 0 350px
+}
+#content .mess {padding-left: 80px; margin-top: 10px; background: url("../images/mess.png") no-repeat}
+#content .mess p.h30 {
+    color: #000;
+    line-height: 22px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold
+}
+#content .mess.ok {background: url("../images/ok.png") no-repeat}
+#content .text {padding: 20px 0}
+.qoute {
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 20px 25px 80px;
+    background: url("../images/qoute.png") 30px 5px no-repeat
+}
+/*questions*/
+#content .search {
+    float: left;
+    width: 660px; height: 46px;
+    padding: 15px 20px;
+    margin: 20px 0 35px;
+    background: url("../images/px.png");
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+#content .search div {
+    width: 658px; height: 44px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 23px;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px 
+}
+#content .search div input[type='text'] {
+    float: left; border: none;
+    width: 500px; margin: 11px 0 0 30px;
+    color: #ccc; font-size: 18px;
+}
+#content .search div input[type='submit'] {
+    cursor: pointer;
+    float: right; border: none;
+    width: 124px; height: 52px;
+    margin: -2px -4px;
+    background: url("../images/search.png") no-repeat
+}
+#content .search div input[type='submit']:hover {background-position: center}
+#content .search div input[type='submit']:active {background-position: bottom}
+#content .questions {float: left;width: 670px; padding-left: 30px}
+#content .questions .question {
+    padding-left: 15px; float: left;
+    margin-bottom: 25px;
+    background: url("../images/hide.png") 0 9px no-repeat
+}
+#content .questions .question.show {background: url("../images/show.png") 0 11px no-repeat}
+#content .questions .question p {float: left}
+#content .questions .question .bord {
+    cursor: pointer; display: block;
+    color: #007ca7; font-size: 18px
+}
+#content .questions .question .bord span {border-bottom: 1px dashed #add3e0;}
+#content .questions .question .bord:hover span{border-bottom: none; padding-bottom: 1px}
+#content .questions .question .toggle {display: none; padding: 15px 0 10px}
+/*Feedback*/
+.heading {
+    margin-top: 25px;
+    float: left; width: 160px;
+    color: #333; font-size: 14px
+}
+.heading p {padding-bottom: 25px}
+.heading .head_file {padding-top: 63px}
+.feedback {float: left; margin: 20px 0 0; width: 780px}
+.feedback div {float: left; margin-bottom: 10px; width: 100%}
+.feedback div input[type='text']{
+    padding: 0 10px;
+    float: left; border: 1px solid #ccc;
+    width: 358px; height: 30px;
+    background: #fff url("../images/input.png") repeat-x;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+.feedback div p {
+    display: none;
+    float: left;padding-left: 20px;
+    background: url("../images/error.png") 0 3px no-repeat; 
+    margin: 5px 0 0 20px; color: #ff0000
+}
+.feedback div.error input,.feedback div.error textarea {
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 10px #f8a9a9;
+    -moz-box-shadow: 0 0 10px #f8a9a9;
+    -webkit-box-shadow: 0 0 10px #f8a9a9
+}
+.feedback div.error p {display: block}
+.feedback div.message p {margin-top: 40px}
+.feedback div textarea{
+    float: left; border: 1px solid #ccc;
+    padding: 6px 10px;
+    width: 438px; height: 93px;
+    background: #fff url("../images/input.png") repeat-x;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+.feedback div.file {
+    width: 100%; height: 23px;
+    background: url("../images/file.png") no-repeat
+}
+.feedback div.file input {
+    cursor: pointer; margin-bottom: 7px;
+    float: left; width: 110px; height: 22px;
+    opacity: 0;
+    -0-opacity: 0;
+    -moz-opacity: 0;
+    -webkit-opacity: 0;
+    filter: alpha(opacity=0)
+}
+.feedback div.file p {margin: 1px 0 0 10px; padding: 0; color: #333; background: none}
+.feedback div.submit {
+    width: 400px; height: 76px;
+    margin: 35px 0 0 -20px;
+    background: url("../images/px.png");
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+.feedback div.submit input {
+    border: none;
+    cursor: pointer;
+    float: left; margin: 13px 20px;
+    width: 163px; height: 45px;
+    background: url("../images/send.png") 0 0 no-repeat;
+    border-radius: 25px;
+    box-shadow: 0 3px 4px #c2c2c2;
+    -moz-box-shadow: 0 3px 4px #c2c2c2;
+    -webkit-box-shadow: 0 3px 4px #c2c2c2
+}
+.feedback div.submit input:hover {background-position: 0 -45px}
+.feedback div.submit input:active {background-position: 0 bottom}
+/*Main_page*/
+.collage {
+    float: left;
+    width: 100%; padding: 390px 0 50px;
+    background: url("../images/collage.png") center top no-repeat
+}
+.button {
+    margin-top: -15px;
+    float: left; width: 100%;
+    text-align: center;
+}
+.button a {
+    display: block; margin: 0 auto 5px;
+    width: 227px; height: 62px;
+    border: none; 
+    background: url("../images/download.png") no-repeat
+}
+.button a:hover {background-position: center}
+.button a:active {background-position: bottom}
+h1.center {width: 100%; padding-bottom: 40px; text-align: center}
+.features {float: left; width: 960px; padding-bottom: 40px}
+.features .item {float: left; margin-right: 20px; width: 300px}
+.features .item .ico {
+    margin-right: 20px;
+    float: left; width: 60px; min-height: 60px;
+    background: url("../images/icons.png") no-repeat
+}
+.features .item .ico.ico2 {background-position: -60px 0}
+.features .item .ico.ico3 {background-position: -120px 0}
+.features .item .ico.ico4 {background-position: -180px 0}
+.features .item .ico.ico5 {background-position: -240px 0}
+.features .item .ico.ico6 {background-position: -300px 0}
+.features .item p {float: left; width: 216px}
+.features .item p.h15 {color: #333; width: 225px; margin-right: -10px; font-weight: bold; padding-bottom: 10px; font-size: 15px}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 100%; float: left;
+	margin: -270px 0 0;
+	height: 270px;
+	position: relative
+}
+#footer .center {width: 940px; position: relative; z-index: 5; margin: 0 auto}
+#footer .soc {
+    float: left;
+    margin: 0 0 60px; text-align: center;
+    width: 940px; height: 21px;
+    background: url("../images/hr.png") center no-repeat
+}
+#footer .footer ul{float: left; list-style: none; width: 240px}
+#footer .footer ul li {margin-bottom: 5px}
+#footer .footer ul li p{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #333; font-weight: bold
+}
+#footer .footer .text {float: left; width: 160px}
+#footer .footer .text p {font-size: 9px; color: #999; font-weight: bold; float: left; width: 100%}
+#footer .footer .text p.copy {font-size: 13px;font-weight: normal; margin-top: 50px}
+#footer .footer .text div {
+    float: left; line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 5px 1px 0 0;
+    width: 25px; height: 31px;
+    background: url("../images/num.png") center no-repeat
+}

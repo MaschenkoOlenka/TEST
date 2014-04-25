@@ -1,0 +1,12 @@
+<project name="Ant" default="build" depends="verification">
+
+<target name="build">
+<echo message="Hello Ant gfhfghfghf"/>
+</target>
+
+<target name="verification">
+<fileset dir="./JavaApplication4">
+</fileset>
+<include name="*" />
+</target>
+</project>
